@@ -1,63 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_margin="10dp">
-
     <ScrollView
-
+        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <View
                 android:id="@+id/textView"
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:background="@color/purple_200"/>
+                style="@style/BoxStyleOne"
+                android:layout_height="100dp"/>
 
             <View
                 android:id="@+id/textView2"
-                android:layout_width="match_parent"
+                style="@style/BoxStyleTwo"
                 android:layout_height="50dp"
-                android:background="@color/ash"
-                android:layout_marginTop="20dp"
                 android:layout_below="@+id/textView"/>
 
             <View
                 android:id="@+id/textView3"
-                android:layout_width="match_parent"
+                style="@style/BoxStyleThree"
                 android:layout_height="150dp"
-                android:layout_below="@+id/textView2"
-                android:layout_marginTop="20dp"
-                android:background="@color/teal_700" />
+                android:layout_below="@+id/textView2"/>
 
 
             <View
                 android:id="@+id/textView4"
-                android:layout_width="match_parent"
+                style="@style/BoxStyleOne"
                 android:layout_height="180dp"
-                android:layout_below="@+id/textView3"
-                android:layout_marginTop="20dp"
-                android:background="@color/purple_200" />
+                android:layout_below="@+id/textView3"/>
 
             <View
                 android:id="@+id/textView5"
-                android:layout_width="200dp"
-                android:layout_height="180dp"
-                android:background="@color/purple_200"
-                android:layout_marginTop="20dp"
-                android:layout_below="@+id/textView4"/>
+                android:layout_below="@+id/textView4"
+                style="@style/BoxStyleFour"
+                android:background="@color/purple_200" />
 
             <View
                 android:id="@+id/textView6"
-                android:layout_width="200dp"
-                android:layout_height="180dp"
-                android:background="@color/teal_200"
-                android:layout_marginTop="20dp"
+                style="@style/BoxStyleFour"
                 android:layout_below="@+id/textView4"
                 android:layout_toRightOf="@id/textView5"/>
             <View
@@ -69,4 +52,3 @@
                 android:layout_below="@id/textView6"/>
         </RelativeLayout>
     </ScrollView>
-</RelativeLayout>
